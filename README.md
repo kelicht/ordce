@@ -1,13 +1,13 @@
 # OrdCE: Ordered Counterfactual Explanation
 
-Temporary repository for our paper: "*Ordered Counterfactual Explanation by Mixed-Integer Linear Optimization*" (to appear in AAAI-21, our preprint is available [here](https://arxiv.org/abs/2012.11782))
+Temporary repository for our paper: "**Ordered Counterfactual Explanation by Mixed-Integer Linear Optimization**," to appear in **AAAI-21** (its preprint is available [here](https://arxiv.org/abs/2012.11782)).
 
-OrdCE provides an *ordered action* (a, s), which is a pair of an *action (perturbation vector)* a and its *perutrbing order* s. 
+OrdCE provides an **ordered action** (*a*, *s*), which is a pair of an **action (perturbation vector)** *a* and its **perutrbing order** *s*. 
 
-OrdCE optimizes the following objective function: C(a, s | x) = C_dist(a) + gamma * C_ord(a, s), where
-* C_dist(a): distance-based cost function (i.e., objective function of existing CE methods such as *total-log percentile shift* [Ustun+, FAT*'19])
-* C_ord(a, s): ordering cost function to determine an optimal perturbing order for a given action (our proposed)
-* gamma: Trade-off parameter between C_dist and C_ord
+OrdCE optimizes the following objective function: *C(a, s | x) = C_dist(a) + gamma * C_ord(a, s)*, where
+* *C_dist(a)*: distance-based cost function (i.e., objective function of existing CE methods such as total-log percentile shift (TLPS))
+* *C_ord(a, s)*: ordering cost function to determine an optimal perturbing order for a given action (our proposed)
+* gamma: Trade-off parameter between *C_dist* and *C_ord*
 
 Running examples are provided in `demo_synthetic.py` and `demo_real.py`.
 ```
