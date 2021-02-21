@@ -42,6 +42,7 @@ def demonstration(dataset='h', clf='rf', n=3, costs=['TLPS'], ordering_cost='sta
 
     denied_individual = X_ts[mdl.predict(X_ts)==1]
     for i, x in enumerate(denied_individual[:n]):
+        print('# {}-th Denied Individual: '.format(i+1))
         for cost in costs:
             # print('## {} (non-order):'.format(cost))
             # oa = oce.extract(x, K=5, ordering=False, post_ordering=False, cost_type=cost)

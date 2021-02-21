@@ -56,38 +56,43 @@ $ python demo_real.py
 # Dataset:  fico
 # Classifier: RandomForest
 
+# 1-th Denied Individual: 
 ## TLPS + C_ord: 
 * Ordered Action (RiskPerformance: Bad -> Good)
 	* 1. NetFractionRevolvingBurden: 40 -> 35 (-5)
 	* 2. AverageMInFile: 42 -> 60 (+18)
 	* 3. MaxDelq2PublicRecLast12M: 4 -> 6 (+2)
-	* (Gamma = 1.0, Obj. = 1.3153 + 1.0 * 1.8452 = 3.1605, Time = 23.5568)
+	* (Gamma = 1.0, Obj. = 1.3153 + 1.0 * 1.8452 = 3.1605, Time = 23.9949)
 
+# 2-th Denied Individual: 
 ## TLPS + C_ord: 
 * Ordered Action (RiskPerformance: Bad -> Good)
 	* 1. MaxDelq2PublicRecLast12M: 4 -> 5 (+1)
 	* 2. MaxDelqEver: 6 -> 7 (+1)
 	* 3. MSinceOldestTradeOpen: 118 -> 119 (+1)
 	* 4. ExternalRiskEstimate: 62 -> 74 (+12)
-	* (Gamma = 1.0, Obj. = 1.0888 + 1.0 * 1.6558 = 2.7446, Time = 15.1959)
+	* (Gamma = 1.0, Obj. = 1.0888 + 1.0 * 1.6558 = 2.7446, Time = 15.0935)
 
+# 3-th Denied Individual: 
 ## TLPS + C_ord: 
 * Ordered Action (RiskPerformance: Bad -> Good)
 	* 1. AverageMInFile: 57 -> 60 (+3)
 	* 2. ExternalRiskEstimate: 63 -> 78 (+15)
-	* (Gamma = 1.0, Obj. = 1.4796 + 1.0 * 1.5395 = 3.0191, Time = 5.5600)
+	* (Gamma = 1.0, Obj. = 1.4796 + 1.0 * 1.5395 = 3.0191, Time = 5.3765)
 
+# 4-th Denied Individual: 
 ## TLPS + C_ord: 
 * Ordered Action (RiskPerformance: Bad -> Good)
 	* 1. NetFractionRevolvingBurden: 43 -> 37 (-6)
 	* 2. NumTotalTrades: 21 -> 22 (+1)
 	* 3. AverageMInFile: 50 -> 51 (+1)
-	* (Gamma = 1.0, Obj. = 0.3333 + 1.0 * 0.2538 = 0.5871, Time = 2.1308)
+	* (Gamma = 1.0, Obj. = 0.3333 + 1.0 * 0.2538 = 0.5871, Time = 2.0859)
 
+# 5-th Denied Individual: 
 ## TLPS + C_ord: 
 * Ordered Action (RiskPerformance: Bad -> Good)
 	* 1. ExternalRiskEstimate: 73 -> 74 (+1)
-	* (Gamma = 1.0, Obj. = 0.1094 + 1.0 * 0.0981 = 0.2075, Time = 0.5840)
+	* (Gamma = 1.0, Obj. = 0.1094 + 1.0 * 0.0981 = 0.2075, Time = 0.5890)
 
 ---
 ```
