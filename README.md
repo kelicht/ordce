@@ -5,7 +5,7 @@ Temporary repository for our paper: "*Ordered Counterfactual Explanation by Mixe
 OrdCE provides an *ordered action* (a, s), which is a pair of an *action (perturbation vector)* a and its *perutrbing order* s. 
 
 OrdCE optimizes the following objective function: C(a, s | x) = C_dist(a) + gamma * C_ord(a, s), where
-* C_dist(a): distance-based cost function (i.e., objective function of existing CE methods such as *total-log percentile shift*[Ustun+, FAT*'19])
+* C_dist(a): distance-based cost function (i.e., objective function of existing CE methods such as *total-log percentile shift* [Ustun+, FAT*'19])
 * C_ord(a, s): ordering cost function to determine an optimal perturbing order for a given action (our proposed)
 * gamma: Trade-off parameter between C_dist and C_ord
 
@@ -38,6 +38,10 @@ $ python demo_synthetic.py
 	- x_3: Income          : 29.0
 	- x_4: WorkPerDay      : 6.0
 	- x_5: HealthStatus    : 6.0
+## TLPS (non-order):
+* Non-Ordered Action (Loan: Reject -> Accept)
+	* Income: 29 -> 33 (+4)
+	* (Gamma = 0.0, Obj. = 0.1892 + 0.0 * 4.0000 = 0.1892, Time = 0.0156)
 ## TLPS + C_ord: 
 * Ordered Action (Loan: Reject -> Accept)
 	* 1. WorkPerDay: 6 -> 7 (+1)
